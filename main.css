@@ -1,0 +1,22 @@
+body {
+	background-color: #111111;
+	color: white;
+	margin:0;
+    padding: 0;
+}
+
+h1 {
+	font-size: 3vw;
+	font-family:cursive;
+}
+
+p {
+	font-size: 1vw;
+}
+
+a {
+	color:#aaaaff;
+}
+a:hover {
+	color:#5555ff;
+}
