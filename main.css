@@ -1,17 +1,7 @@
+
 body {
 	background-color: #111111;
 	color: white;
-	margin:0;
-    padding: 0;
-}
-
-h1 {
-	font-size: 3vw;
-	font-family:cursive;
-}
-
-p {
-	font-size: 1vw;
 }
 
 a {
@@ -20,3 +10,128 @@ a {
 a:hover {
 	color:#5555ff;
 }
+#logo {
+	transition: width 0.5s;
+}
+p {
+	transition: margin 0.5s;
+}
+h1 {
+    font-family:"Brush Script MT", cursive, serif;
+    text-align: center;
+	transition: margin 0.5s, font-size 0.5s;
+}
+
+#forkongithub a {
+    background: #111;
+    color: #fff;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 40px;
+    font-size: 1rem;
+    line-height: 2rem;
+    position: relative;
+    transition: background-color 0.4s, transform 0.4s;
+    border-top:solid white 2px;
+    border-bottom:solid white 2px;
+}
+#forkongithub a:hover {
+    background: #911;
+    color: #fff;
+}
+ /* Small-medium devices (phones and tablets, 900px and down) */
+@media only screen and (max-width: 900px) {
+	#logo {
+		margin: auto;
+		display:block;
+		top:10px;
+		position: relative;
+	}
+	#forkongithub a {
+	    display:block;
+	    margin:auto;
+	    border-top:solid white 2px;
+	    border-bottom:solid white 2px;
+    }
+    p {
+    	margin-left: 50px;
+    	margin-right: 50px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 900px) {
+	#logo {
+		position: fixed;
+		top:10px;
+		left:10px;
+	}
+    p {
+    	font-size:1.1rem;
+    	margin-left: 250px;
+    	margin-right: 250px;
+    }	
+    #forkongithub {
+        position: fixed;
+        display: block;
+        top: 0;
+        right: 0;
+        width: 200px;
+        overflow: hidden;
+        height: 200px;
+        z-index: 9999;
+    }
+    #forkongithub a {
+        width: 200px;
+        position: absolute;
+        top: 60px;
+        right: -60px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#logo {
+		position: fixed;
+		top:10px;
+		left:10px;
+		width:300px;
+	}
+    h1 {
+    	margin-top: 100px;
+    	font-size: 2.5rem;
+    }
+    p {
+    	margin-left: 400px;
+    	margin-right: 400px;
+    }	
+    #forkongithub {
+        position: fixed;
+        width:800px;
+        height:400px;
+        z-index: 9999;
+    }
+    #forkongithub a {
+    	font-size: 1.5rem;
+    	line-height: 3rem;
+        width: 400px;
+        top:100px;
+        right:-100px;
+/*        top:100px;*/
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    }
+
+} 
