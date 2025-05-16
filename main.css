@@ -13,7 +13,7 @@ a:hover {
 #logo {
 	transition: width 0.5s;
 }
-body {
+#main {
 	transition: margin 0.5s;
 }
 h1 {
@@ -31,9 +31,11 @@ h1, h2, h3, h4 {
 		margin: auto;
 		display:block;
 		top:10px;
-		position: relative;
+        left: unset;
+        right: unset;
+		position: static;
 	}
-    body {
+    #main {
     	margin-left: 50px;
     	margin-right: 50px;
     }
@@ -42,21 +44,21 @@ h1, h2, h3, h4 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 900px) {
 	#logo {
-		position: fixed;
+		position: absolute;
 		top:10px;
 		left:10px;
 	}
-    body {
+    #main {
     	font-size:1.1rem;
-    	margin-left: 250px;
-    	margin-right: 250px;
+    	margin-left: 150px;
+    	margin-right: 150px;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 	#logo {
-		position: fixed;
+		position: absolute;
 		top:10px;
 		left:10px;
 		width:300px;
@@ -65,8 +67,8 @@ h1, h2, h3, h4 {
     	margin-top: 100px;
     	font-size: 2.5rem;
     }
-    body {
-    	margin-left: 400px;
-    	margin-right: 400px;
+    #main {
+    	margin-left: 250px;
+    	margin-right: 250px;
     }
 } 
